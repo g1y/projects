@@ -1,0 +1,19 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "List interface for projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g1y/projects.git"
+  },
+  "author": "Guy Moore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/g1y/projects/issues"
+  },
+  "homepage": "https://github.com/g1y/projects#readme"
+}
