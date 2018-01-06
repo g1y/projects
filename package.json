@@ -4,7 +4,9 @@
   "description": "List interface for projects",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+	"styleguide": "styleguidist server",
+	"styleguide:build": "styleguidist build"
   },
   "repository": {
     "type": "git",
