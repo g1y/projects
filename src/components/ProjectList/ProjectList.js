@@ -27,10 +27,29 @@ export default class ProjectList extends React.Component  {
 		xhr.onload = function () {
 			  console.log('data returned:', xhr.response);
 		}
-		var query = `query  {}`;
+
+		var query = `query  {
+			{
+				user(login:$username) {
+					contributedRepositories(first:20) {
+						edges {
+							node {
+								id
+								name
+								owner {
+									id
+									login
+								}
+							}
+						}
+					}
+				}
+			}
+		}``;
+
 		xhr.send(JSON.stringify({
 			  query: query,
-			  variables: {},
+			  variables: {'username': username},
 		}));
 	}
 }
